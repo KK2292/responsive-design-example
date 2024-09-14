@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: auto;
+        padding: 100px;
+        background-color: #000;
+      }
+      h1 {
+        color: #fff;
+        white-space: nowrap;
+      }
+      .wrapper {
+        margin: auto;
+        background-color: #000;
+        max-width: 1920px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0 40px;
+      }
+      .text-content {
+        width: 100%;
+        max-width: 500px;
+        color: #fff;
+      }
+      .square {
+        background-color: #fff;
+        width: 100%;
+        max-width: 400px;
+        aspect-ratio: 4 / 3;
+      }
+
+      .square--mobile {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        body {
+          padding: 40px;
+        }
+        .wrapper {
+          flex-direction: column;
+        }
+        .square--pc {
+          display: none;
+        }
+        .square--mobile {
+          display: block;
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="text-content">
+        <h1>-レスポンシブ例-</h1>
+        <div class="square square--mobile"></div>
+        <p>
+          横を考えるたのはきっと始めでどうもますますた。
+          毫も大森さんを意見口こう発展がなっます丁どんな西洋私か盲従にというご所有ですないならですと。
+          この先刻も彼らか学校衣食に行なわて、久原さんののを廃墟のあれへけっしてお［＃「と来て私好奇がお下宿がしようにそのうちご満足へする。
+        </p>
+      </div>
+      <div class="square square--pc"></div>
+    </div>
+  </body>
+</html>
